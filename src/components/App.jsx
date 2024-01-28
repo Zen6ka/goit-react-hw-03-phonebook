@@ -27,6 +27,8 @@ componentDidMount() {
 }
 
 componentDidUpdate(prevProps, prevState) {
+	// console.log('prevState:', prevState);
+	// console.log('this.state:', this.state);
 	if (prevState.contacts !== this.state.contacts) {
 			window.localStorage.setItem(
 			storageKey,
